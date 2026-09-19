@@ -492,6 +492,38 @@
         right: 10px;
         font-size: 0.85rem;
     }
+/* 프로젝트 카드 전체 크기를 1/4 수준으로 축소 및 정렬 */
+    .zigzag-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* 모바일에서 2열 배치 */
+        gap: 8px !important;
+    }
+
+    .zigzag-card-wrapper {
+        flex: unset !important;
+        width: 100% !important;
+        min-width: unset !important;
+        transform: none !important;
+    }
+
+    /* 카드 내부 썸네일과 폰트 크기를 대폭 축소 */
+    .zigzag-card-wrapper div[style*="height: 160px"] {
+        height: 45px !important; /* 썸네일 높이를 아주 작게 축소 */
+        font-size: 0.65rem !important;
+    }
+
+    .zigzag-card-wrapper div[style*="padding: 20px 15px"] {
+        padding: 8px 6px !important; /* 내부 여백 축소 */
+    }
+
+    .zigzag-card-wrapper div[style*="font-size: 1rem"] {
+        font-size: 0.75rem !important; /* 프로젝트 이름 글씨 크기 축소 */
+        margin-bottom: 2px !important;
+    }
+
+    .zigzag-card-wrapper div[style*="font-size: 0.85rem"] {
+        font-size: 0.6rem !important; /* 설명 글씨 크기 축소 */
+    }
 }
 
 @media screen and (max-width: 480px) {
