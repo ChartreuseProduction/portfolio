@@ -7,17 +7,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #ffffff; 
-            --card-bg: #f9f9f9;  
-            --text-main: #111111; 
+            --bg-color: #ffffff;
+            --card-bg: #f9f9f9;
+            --text-main: #111111;
             --text-muted: #666666;
-            --accent-color: #6a9a00; 
+            --accent-color: #6a9a00;
             --border-color: #e0e0e0;
         }
 
         body.dark-mode {
-            --bg-color: #121212; /* 차콜 톤 배경 */
-            --card-bg: #1c1c1c;  /* 카드 배경 */
+            --bg-color: #121212;
+            --card-bg: #1c1c1c;
             --text-main: #f0f0f0;
             --text-muted: #aaaaaa;
             --accent-color: #8bcd00;
@@ -33,9 +33,9 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            cursor: none; 
+            cursor: none;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-            font-style: normal !important; 
+            font-style: normal !important;
         }
 
         body {
@@ -43,7 +43,7 @@
             color: var(--text-main);
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            padding: 80px 15px 150px 15px; 
+            padding: 80px 15px 150px 15px;
             display: flex;
             justify-content: center;
             position: relative;
@@ -80,7 +80,7 @@
 
         .top-left-controls {
             position: absolute;
-            top: -40px; 
+            top: -40px;
             left: 20px;
             z-index: 100;
         }
@@ -95,7 +95,7 @@
 
         .top-right-socials {
             position: absolute;
-            top: -40px; 
+            top: -40px;
             right: 20px;
             display: flex;
             gap: 15px;
@@ -114,85 +114,85 @@
         }
 
         header {
-            margin-bottom: 20px; 
+            margin-bottom: 20px;
             padding-top: 0px;
-            padding-bottom: 20px; 
-            border-bottom: 1px solid var(--border-color); 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: center; 
-            align-items: center; 
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             text-align: center;
             gap: 12px;
         }
 
-        .profile-pic-box { width: 90px; height: 90px; border-radius: 50%; overflow: hidden; background: #111; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 5px; } 
+        .profile-pic-box { width: 90px; height: 90px; border-radius: 50%; overflow: hidden; background: #111; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15); margin-bottom: 5px; }
         #canvas3D { width: 100%; height: 100%; display: block; }
 
         .profile-titles { display: flex; flex-direction: column; align-items: center; width: 100%; }
-        
-        .subtitle-container { 
-            height: 1.5rem; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            margin-bottom: 8px; 
+
+        .subtitle-container {
+            height: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
         }
-        
-        .profile-titles .subtitle { 
-            font-size: 1rem; 
-            color: var(--accent-color); 
-            font-weight: 600; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
-            border-right: 2px solid var(--accent-color); 
-            white-space: nowrap; 
-            overflow: hidden; 
-            display: inline-block; 
+
+        .profile-titles .subtitle {
+            font-size: 1rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-right: 2px solid var(--accent-color);
+            white-space: nowrap;
+            overflow: hidden;
+            display: inline-block;
             line-height: 1.2;
         }
-        
-        .profile-titles h1 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 5.2rem; 
-            font-weight: 700; 
-            letter-spacing: -1.5px; 
-            color: var(--text-main); 
-            line-height: 1.1; 
-            margin: 0; 
+
+        .profile-titles h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5.2rem;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            color: var(--text-main);
+            line-height: 1.1;
+            margin: 0;
         }
-        
-        .profile-titles h2 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 1.4rem; 
-            font-weight: 600; 
-            color: var(--text-muted); 
-            margin-top: 5px; 
+
+        .profile-titles h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            margin-top: 5px;
             letter-spacing: -0.5px;
         }
 
         .about-text-hero {
-            max-width: 1400px; 
+            max-width: 1400px;
             width: 100%;
-            margin-top: 20px; 
-            font-size: 0.95rem; 
-            line-height: 1.6; 
-            color: var(--text-main); 
+            margin-top: 20px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: var(--text-main);
             text-align: center;
             word-break: keep-all;
             display: flex;
             flex-direction: column;
-            gap: 4px; 
+            gap: 4px;
         }
 
         #moreAboutMeBtn {
-            margin-top: 8px; 
+            margin-top: 8px;
             padding: 5px 10px;
             background: transparent;
             border: none;
             color: var(--text-muted);
             font-weight: 600;
-            font-size: 0.75rem; 
+            font-size: 0.75rem;
             transition: color 0.2s;
             font-family: 'Inter', sans-serif;
             text-decoration: underline;
@@ -255,7 +255,7 @@
         .tech-badge, .lang-badge {
             background: var(--card-bg);
             border: 1px solid var(--border-color);
-            padding: 3px 10px; 
+            padding: 3px 10px;
             border-radius: 6px;
             font-size: 0.8rem;
             font-weight: 600;
@@ -272,13 +272,13 @@
             width: 100%;
             max-width: 1550px;
             margin-top: 15px;
-            gap: 40px; 
+            gap: 40px;
             justify-content: space-between;
         }
 
         .four-slots-container .slot {
             flex: 1;
-            height: 420px; /* 세로 길이 더 키움 */
+            height: 420px;
             background-color: transparent;
             border: none;
             border-radius: 0;
@@ -290,7 +290,7 @@
             color: var(--text-muted);
             font-size: 1rem;
             font-weight: 500;
-            position: relative; 
+            position: relative;
         }
 
         .slot-title {
@@ -306,9 +306,9 @@
         .four-slots-container .slot:not(:last-child)::after {
             content: '';
             position: absolute;
-            right: -20px; 
-            top: 7%; 
-            height: 86%; 
+            right: -20px;
+            top: 7%;
+            height: 86%;
             width: 1px;
             background-color: var(--border-color);
         }
@@ -320,39 +320,39 @@
             width: 100%;
         }
 
-        nav { 
+        nav {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 15px; 
+            gap: 15px;
             margin-top: 15px;
-            margin-bottom: 50px; 
+            margin-bottom: 50px;
             width: 100%;
         }
-        nav a { 
-            color: var(--text-muted); 
-            text-decoration: none; 
-            font-size: 1rem; 
-            font-weight: 600; 
-            padding: 4px 8px; 
-            background: transparent !important; 
-            transition: color 0.2s ease, transform 0.2s ease; 
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 4px 8px;
+            background: transparent !important;
+            transition: color 0.2s ease, transform 0.2s ease;
             display: flex;
             align-items: center;
             justify-content: center;
             letter-spacing: 0.3px;
-            border: none !important; 
+            border: none !important;
             text-align: center;
             white-space: nowrap;
         }
-        nav a:hover { 
-            color: var(--accent-color); 
-            background: transparent !important; 
+        nav a:hover {
+            color: var(--accent-color);
+            background: transparent !important;
             transform: translateY(-2px);
         }
 
-        .field-section { 
-            margin-bottom: 90px; 
-            scroll-margin-top: 90px; 
+        .field-section {
+            margin-bottom: 90px;
+            scroll-margin-top: 90px;
         }
         .field-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--text-main); border-bottom: 2px solid var(--text-main); padding-bottom: 15px; margin-bottom: 40px; }
 
@@ -378,7 +378,7 @@
         .more-content-list { list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem; color: var(--text-muted); margin-bottom: 15px; }
         .more-content-list li { line-height: 1.6; }
         .more-content-list li strong { color: var(--text-main); font-weight: 600; display: inline-block; margin-bottom: 3px; }
-        
+
         .tag-badge { display: inline-block; background: #eee; color: #333; font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; margin-bottom: 4px; font-weight: 700; margin-right: 6px; }
         body.dark-mode .tag-badge { background: #222; color: #ddd; }
 
@@ -412,7 +412,7 @@
         }
 
         .secret-footer { margin-top: 50px; padding-top: 30px; border-top: 1px dashed var(--border-color); display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: var(--text-muted); flex-wrap: wrap; gap: 15px; }
-        
+
         .footer-utility-btns { display: flex; gap: 20px; align-items: center; }
         .footer-utility-btns button {
             background: none; border: none; color: var(--text-muted);
@@ -421,6 +421,89 @@
         }
         .footer-utility-btns button:hover { color: var(--accent-color); }
         .footer-utility-btns svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 40px 10px 100px 10px;
+    }
+
+    .page-wrapper {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+
+    .profile-titles h1 {
+        font-size: 3rem !important;
+        letter-spacing: -1px;
+    }
+
+    .profile-titles h2 {
+        font-size: 1.1rem !important;
+    }
+
+    .about-text-hero {
+        font-size: 0.88rem !important;
+        padding: 0 10px;
+    }
+
+    .four-slots-container {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .four-slots-container .slot {
+        height: auto !important;
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .four-slots-container .slot:not(:last-child)::after {
+        display: none;
+    }
+
+    .zigzag-grid {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .zigzag-card-wrapper {
+        flex: 0 0 calc(50% - 10px);
+        min-width: 140px;
+    }
+
+    .field-title {
+        font-size: 1.6rem !important;
+        text-align: center;
+    }
+
+    nav {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .top-left-controls {
+        top: -30px;
+        left: 10px;
+    }
+
+    .top-right-socials {
+        top: -30px;
+        right: 10px;
+        font-size: 0.85rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-titles h1 {
+        font-size: 2.4rem !important;
+    }
+
+    .zigzag-card-wrapper {
+        flex: 0 0 100% !important;
+    }
+}
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
@@ -435,12 +518,12 @@
         </div>
 
         <div class="top-right-socials">
-            <a href="https://x.com/_NotJuly0325" target="_blank">Twitter (X)</a> | 
+            <a href="https://x.com/_NotJuly0325" target="_blank">Twitter (X)</a> |
             <a href="https://www.instagram.com/_notjuly0325/" target="_blank">Instagram</a>
         </div>
 
         <div class="main-content">
-            
+
             <header>
                 <div class="profile-pic-box" id="canvasBox">
                     <canvas id="canvas3D"></canvas>
@@ -451,14 +534,14 @@
                     </div>
                     <h1>Nicholas Yang</h1>
                     <h2>Director of Chartreuse Production</h2>
-                    
+
                     <div class="about-text-hero">
                         <div>엔지니어의 정교한 시스템 설계 능력과 글로벌 팬덤을 읽어내는 디렉터의 감각을 겸비한 <b>'테크 기반 IP 프로듀서'</b>.</div>
                         <div>8년간의 개발과 해외 유학, 기획 경험을 바탕으로 IP·앨범·콘텐츠·공간 프로덕션과 팬덤 분석을 통해 아티스트와 팬을 연결하는 새로운 경험을 설계하고 구현합니다.</div>
                     </div>
 
                     <button id="moreAboutMeBtn" onclick="openProfileModal()">View Full Profile</button>
-                    
+
                     <div class="four-slots-container">
                         <div class="slot"><div class="slot-title">Content Prod.</div></div>
                         <div class="slot"><div class="slot-title">IP Production</div></div>
@@ -481,7 +564,7 @@
 
                 <div id="ip-contnet-production-pipelines" class="field-section">
                     <div class="field-title">IP/Content Production & Pipelines</div>
-                    
+
                     <div class="zigzag-grid">
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set1', 'p1Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(0);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 01</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">01. 버츄얼 IP 총괄</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">인프라 및 세계관 비주얼 총괄 운영</div></div></div></div>
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set1', 'p2Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(35px);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(30px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(35px)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 02</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">02. LITCADE 플랫폼</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">글로벌 팬덤 타겟 WebGL 게임</div></div></div></div>
@@ -604,7 +687,7 @@
 
                 <div id="art-and-research" class="field-section" style="margin-top: 70px;">
                     <div class="field-title">Art & Research</div>
-                    
+
                     <div class="zigzag-grid">
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set4', 'p9Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(0);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 09</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">09. TAMU KDA 영상</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">무대 콘셉트 및 촬영 디렉팅 총괄</div></div></div></div>
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set4', 'p10Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(35px);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(30px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(35px)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 10</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">10. 글로벌 문화 리서치</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">타겟 시장 문화 감수성 고려 기획</div></div></div></div>
@@ -719,7 +802,7 @@
 
                 <div id="global-community-and-business" class="field-section" style="margin-top: 70px;">
                     <div class="field-title">Global Community & Business</div>
-                    
+
                     <div class="zigzag-grid">
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set3', 'p17Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(0);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 17</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">17. 온/오프라인 팬 이벤트</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">생일카페 및 Roblox 가상공간 운영</div></div></div></div>
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set3', 'p18Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(35px);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(30px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(35px)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 18</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">18. 팬 커뮤니티 관리</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">600인 규모 여론 및 리스크 대응</div></div></div></div>
@@ -765,7 +848,7 @@
 
                 <div id="engineering-rnd" class="field-section" style="margin-top: 70px;">
                     <div class="field-title">Engineering & System R&D</div>
-                    
+
                     <div class="zigzag-grid">
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set6', 'p20Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(0);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(-5px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(0)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 20</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">20. Soft Interaction Lab</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">메타버스 VR 물리 피드백 고도화</div></div></div></div>
                         <div class="zigzag-card-wrapper"><div onclick="toggleExclusiveDetail('set6', 'p21Details')" style="background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; cursor: pointer; transition: transform 0.3s, border-color 0.3s; display: flex; flex-direction: column; height: 100%; transform: translateY(35px);" onmouseover="this.style.borderColor='var(--accent-color)'; this.style.transform='translateY(30px)';" onmouseout="this.style.borderColor='var(--border-color)'; this.style.transform='translateY(35px)';"><div style="width: 100%; height: 160px; background-color: #222; display: flex; align-items: center; justify-content: center; color: #888; font-size: 0.9rem; border-bottom: 1px solid var(--border-color);"><span>Thumbnail 21</span></div><div style="padding: 20px 15px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"><div style="font-size: 1rem; font-weight: 600; color: var(--text-main); margin-bottom: 6px;">21. 비행 시뮬레이터 개발</div><div style="font-size: 0.85rem; color: var(--text-muted); line-height: 1.4;">공기저항 수식 연산 및 Steam 퍼블리싱</div></div></div></div>
@@ -826,9 +909,9 @@
     <div id="profileModal" class="modal-overlay">
         <div class="modal-content">
             <button class="modal-close-btn" onclick="closeProfileModal()">×</button>
-            
+
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 5px;">Profile</h3>
-            
+
             <div style="display: flex; flex-direction: column; gap: 4px; margin-top: 10px;">
                 <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">[Name]</div>
                 <div style="font-size: 1.1rem; font-weight: 600; color: var(--text-main);">양준혁 / Nicholas Yang</div>
@@ -844,7 +927,7 @@
                 <div style="font-size: 1rem; font-weight: 600; color: var(--text-main);">Texas A&M University</div>
                 <div style="font-size: 0.95rem; color: var(--text-muted);">Bachelor of Science in Electrical Engineering (Class of '28)</div>
             </div>
-            
+
             <div style="display: flex; flex-direction: column; gap: 8px; align-items: center; margin-top: 5px;">
                 <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">[Language]</div>
                 <div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center;">
@@ -874,7 +957,7 @@
     <script>
         const currentHour = new Date().getHours();
         if (currentHour >= 22 || currentHour < 6) { document.body.classList.add('dark-mode'); }
-        
+
         const themeBtn = document.getElementById('themeToggleBtn');
         if (themeBtn) {
             themeBtn.innerHTML = document.body.classList.contains('dark-mode') ? 'Light Mode' : 'Dark Mode';
